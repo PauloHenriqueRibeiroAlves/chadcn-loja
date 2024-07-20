@@ -3,14 +3,14 @@ import { Product } from "@/types/product";
 import { Button } from "../ui/button";
 import { useToast } from "../ui/use-toast";
 import { ToastAction } from "../ui/toast";
-import { useCardStore } from "@/stores/card-store";
+import { useCartStore } from "@/stores/card-store";
 
 type Props = {
     item: Product;
 }
 export const ProductItem = ({ item }: Props) => {
     const { toast } = useToast();
-    const { upsertCartItem } = useCardStore(state => state);
+    const { upsertCartItem } = useCartStore(state => state);
 
     const handleAddButton = () => {
         //1-etapa: Adicionar o item no store

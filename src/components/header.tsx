@@ -1,4 +1,4 @@
-import { CardSdidebar } from "./card/sidebar";
+import { CartSdidebar } from "./card/sidebar";
 import { Logo } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -10,7 +10,7 @@ export const Header = () => {
                 <ThemeToggle/>
             </div>
             <div className="flex items-center gap-3">
-                <CardSdidebar/>
+                <CartSdidebar/>
             </div>
         </header>
     );

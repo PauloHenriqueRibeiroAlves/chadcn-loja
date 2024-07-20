@@ -12,8 +12,8 @@ type Actions = {
 const initialStates: States = {
     cart: []
 }
-
-export const useCardStore = create<States & Actions>()(set => ({
+//useCardStore 
+export const useCartStore = create<States & Actions>()(set => ({
     ...initialStates,
     upsertCartItem: (product, quantity) => set(state => {
         let newCart = state.cart;
